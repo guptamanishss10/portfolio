@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor:pointer;
+  display: flex;
+}
+:root{
+  --primary-white:#fff;
+  --primary-red:#ff0000;
+}
+nav{
+  z-index: 2;
+}
+ 
+nav ul li{
+  text-transform: uppercase;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav > li > a{
+  margin-left: 0.075rem;
+  margin-right: 0.075rem;
+  color: var(--primary-white)!important;
+}
+nav a.nav-link{
+  
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.00375rem;
+  cursor: pointer;
+}
+.navbar-nav > li > a.active, .navbar-nav>li>a:focus{
+  border-top:0.1rem solid var(--primary-red);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-wraper{
+  position: relative;
+  background:url(workspace-mockup-laptop-computer-other-office-object-desk-115751667.jpg) no-repeat;
+  background-size: cover;
+  background-position: cover;
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-info{
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position:absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+.main-info h1{
+  color: coral;
+  text-transform: uppercase;
 }
+.typed-text{
+  font-size: 5rem;
+  color:crimson;
+}
+.tsparticles-canvas-el{
+  position:absolute;
+  color: #ff0000;
+  height: 512px;
+  width: 512px;
+  z-index: 1;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
